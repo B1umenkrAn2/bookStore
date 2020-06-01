@@ -31,8 +31,7 @@ db.once('open', () => console.log('Connected to Mongoose'))
 
 
 //  every function can have a router which also called controller
-// for this code this router handler all index page require
-app.use('/', indexRouter)
+app.use('/', indexRouter) // for this code this router handler all index page require
 app.use('/authors', authorRouter)
 app.use('/books', bookRouter)
 
