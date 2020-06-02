@@ -46,6 +46,8 @@ router.post('/', async (req, res) => {
     }
 })
 
+
+// show author
 router.get('/:id', async (req, res) => {
 
     try {
@@ -63,6 +65,7 @@ router.get('/:id', async (req, res) => {
 
 })
 
+// edit author
 router.get('/:id/edit', async (req, res) => {
 
     try {
@@ -74,6 +77,7 @@ router.get('/:id/edit', async (req, res) => {
 
 })
 
+// update author
 router.put('/:id', async (req, res) => {
     let author
     try {
@@ -93,6 +97,8 @@ router.put('/:id', async (req, res) => {
     }
 })
 
+
+// delete author
 router.delete('/:id', async (req, res) => {
     let author
     try {
@@ -103,7 +109,7 @@ router.delete('/:id', async (req, res) => {
         if (author == null) {
             res.send('/')
         } else {
-            res.redirect(`authors/${author.id}`)
+            res.redirect(`authors/${ author.id }`)
         }
     }
 })
