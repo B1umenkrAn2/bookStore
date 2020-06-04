@@ -14,13 +14,20 @@
     <script defer src="https://unpkg.com/filepond/dist/filepond.js"></script>
     <script defer src="/javascripts/fileUpload.js"></script>
     <!-- end of filepond -->
+
+    <!-- css  -->
+    <link rel="stylesheet" href="/stylesheets/main.css">
     <title>BookStroe</title>
 </head>
 
 <body>
-    <%- include ('../partials/header.ejs') %>
-    <%- include ('../partials/errorMessage.ejs') %>
-    <%- body %>
+    <div class="container">
+        <%- include ('../partials/header.ejs') %>
+            <%- include ('../partials/errorMessage.ejs') %>
+                <div class="inner-container">
+                    <%- body %>
+                </div>
+    </div>
 </body>
 
 </html>
