@@ -15,8 +15,14 @@
     <%= book.description %>
 </div>
 
+<<<<<<< HEAD
 <div class="btn-row">
     <a class="btn btn-primary" href="/books/<%= book.id %>/edit">Edit</a>
     <%- include('../partials/deleteForm', { url: `/books/${book.id}` }) %>
         <a class="btn btn-primary" href="/authors/<%= book.author.id %>">View Author</a>
 </div>
+=======
+<a class="btn btn-primary" href="/books/<%= book.id %>/edit">Edit</a>
+<%- include('../partials/deleteForm', { url: `/books/${book.id}` }) %>
+    <a class="btn btn-primary" href="/authors/<%= book.author.id %>">View Author</a>
+>>>>>>> 54387411d3e94e29124064173c3c5e3c1831a66e
