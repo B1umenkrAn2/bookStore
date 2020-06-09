@@ -3,8 +3,11 @@
  @import 'shared/header.css';
  @import 'shared/button.css';
  @import 'shared/form.css';
+ @import 'shared/author.css';
+ @import 'shared/book.css';
+
  :root {
-     font-family: 'Gotham Roueded';
+     font-family: 'Gotham Rounded';
      font-size: 20px;
      color: var(--color-text-light);
  }
